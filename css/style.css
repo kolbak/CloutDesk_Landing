@@ -317,11 +317,11 @@ a:hover {
 }
 
 .skills .container div .soon::after {
-	content  : "coming soon";
-	font-size: 1.3rem;
+	content     : "coming soon";
+	font-size   : 1.3rem;
 	/* position : absolute; */
-	display  : block;
-	opacity  : .7;
+	display     : block;
+	opacity     : .7;
 }
 
 .progress {
@@ -968,6 +968,7 @@ a:hover {
 .uname-pkey {
 	height: 50px;
 }
+
 .type-ntf .form-group,
 .type-fllw .form-group {
 	height: 50px;
@@ -1052,6 +1053,21 @@ a:hover {
 
 .ch-box .checkbox:checked+label .ch-mark {
 	display: inline-block;
+}
+
+.required-field {
+	border: 1px rgba(240, 128, 128, 0.63) solid !important;
+	box-shadow: 0 0 2px 0px rgba(240, 128, 128, 0.678) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+button[type='submit'] {
+	color: white !important;
+	outline: none !important;
 }
 
 .cnt_info ul {
