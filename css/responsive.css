@@ -1,6 +1,6 @@
  @media (min-width:1200px) {
    .left_crousel_btn {
-     left: 30px;
+     left: 130px;
    }
 
    .right_crousel_btn {
@@ -9,9 +9,9 @@
  }
 
  @media (min-width:992px) and (max-width:1169px) {
-   /* .container {
+   .container {
      width: 970px;
-   } */
+   }
 
    .lts_pst img {
      width: 100%;
@@ -25,9 +25,9 @@
      width: 205px;
    }
 
-   /* .title_sec {
+   .title_sec {
      width: 750px;
-   } */
+   }
 
    .abt {
      width: 820px;
@@ -94,7 +94,7 @@
 
  @media (max-width:767px) {
    .container {
-     width: 600px;
+     width: 300px;
    }
 
    .title_sec {

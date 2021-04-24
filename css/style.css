@@ -103,16 +103,6 @@ a:hover {
 	animation       : spin 1.5s linear infinite;
 }
 
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
 #nav_menu ul {
 	float     : right;
 	list-style: none outside none;
@@ -365,28 +355,37 @@ a:hover {
 }
 
 .skills .container div {
-	margin-bottom: 4rem;
+	margin-bottom: 1.7rem;
 }
 
 .skills .container div img {
 	width: 12%;
 }
-
+.caption_carousel div p {
+	font-size: 2rem;
+}
 .skills .container div p {
 	font-size: 2.8rem;
 }
 
 #contact-form p,
+.caption_carousel div p:not(.soon),
 .skills .container div p:not(.soon) {
 	color: black
 }
-
+.caption_carousel div .soon::after,
 .skills .container div .soon::after {
 	content     : "coming soon";
 	font-size   : 1.3rem;
 	/* position : absolute; */
 	display     : block;
 	opacity     : .7;
+}
+
+.caption_carousel div{
+	height: 30%;
+	width: 25%;
+	margin: 0 auto;
 }
 
 .progress {
@@ -538,7 +537,7 @@ a:hover {
 }
 
 .wrap_caption {
-	padding: 190px 0;
+	margin: 150px 0;
 }
 
 .slider {
@@ -551,18 +550,6 @@ a:hover {
 #margin {
 	height: 650px;
 	width : 100%;
-}
-
-.left_crousel_btn,
-.right_crousel_btn {
-	color      : #fff;
-	height     : 20px;
-	position   : absolute;
-	text-align : center;
-	top        : 50%;
-	width      : 20px;
-	font-size  : 25px;
-	font-weight: normal;
 }
 
 .caption_carousel h1 {
@@ -1023,7 +1010,7 @@ a:hover {
 	column-gap           : 15px;
 }
 
-.type-ntf {
+.type-ntf  {
 	display              : grid;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows   : 1fr 1fr 1fr;
@@ -1077,7 +1064,7 @@ a:hover {
 
 .ch-box .checkbox:not(checked)+label {
 	position: relative;
-	padding : 8px 0 0 60px;
+	padding : 8px 10px 0 60px;
 }
 
 .ch-box .checkbox:not(checked)+label:before {
