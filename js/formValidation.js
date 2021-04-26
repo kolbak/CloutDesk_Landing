@@ -21,7 +21,7 @@ for (let index = 0; index < chBoxes.length; index++) {
 $(inputs).on('input', (e) => {
 	if (e.currentTarget.getAttribute('required')) {
 		e.currentTarget.classList.remove('required-field');
-		if(e.currentTarget.value){
+		if (e.currentTarget.value) {
 			e.currentTarget.classList.add('required-field');
 		}
 	}
@@ -42,6 +42,6 @@ form.onsubmit = async (e) => {
 		accept_all: formData.get('accept_all'),
 		username: formData.get('username')
 	};
-	
-	
+
+
 };

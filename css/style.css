@@ -291,7 +291,7 @@ a:hover {
 		grid-template-columns: 9fr 1fr;
 		position             : relative;
 	}
-	
+
 	.title_sec h1 {
 		font-size: 50px;
 	}
@@ -301,11 +301,12 @@ a:hover {
 	}
 
 	.title_sec .arrows {
-		top: -20vh;
+		top   : -20vh;
 		width : 20vh;
 		height: 20vh;
 	}
 }
+
 .arrows img {
 	width     : 70%;
 	/* height : 70%; */
@@ -361,9 +362,11 @@ a:hover {
 .skills .container div img {
 	width: 12%;
 }
+
 .caption_carousel div p {
 	font-size: 2rem;
 }
+
 .skills .container div p {
 	font-size: 2.8rem;
 }
@@ -373,6 +376,7 @@ a:hover {
 .skills .container div p:not(.soon) {
 	color: black
 }
+
 .caption_carousel div .soon::after,
 .skills .container div .soon::after {
 	content     : "coming soon";
@@ -382,10 +386,14 @@ a:hover {
 	opacity     : .7;
 }
 
-.caption_carousel div{
-	height: 30%;
-	width: 25%;
-	margin: 0 auto;
+/* .wrap_caption {
+	margin-right: 0;
+	margin-left: 0;
+	width: 60%;
+} */
+.caption_carousel div {
+	/* width: 80%; */
+	padding: 0 20%;
 }
 
 .progress {
@@ -492,48 +500,6 @@ a:hover {
 .hover_effect_btn a:hover::before,
 .hover_effect_btn a:focus::before {
 	transform: translateX(0%);
-}
-
-#protfolio_sec ul.filter {
-	color: #2e2e2e;
-}
-
-#protfolio_sec ul.filter li {
-	color       : #666666;
-	cursor      : pointer;
-	display     : inline-block;
-	font-family : lato;
-	font-size   : 14px;
-	margin-right: 5px;
-	padding     : 15px 35px;
-	position    : relative;
-}
-
-#protfolio_sec ul.filter li:hover {
-	color: #36BFF3;
-}
-
-#protfolio_sec ul.filter li.active {
-	border-bottom: 1px solid #00AFF0;
-}
-
-#protfolio_sec .all-portfolios {
-	margin-top : 20px;
-	margin-left: -10px;
-}
-
-#protfolio_sec .single-portfolio {
-	float        : left;
-	margin-bottom: 10px;
-	width        : 277px;
-}
-
-#protfolio_sec .single-portfolio:hover .img_hoverlay {
-	display: block;
-}
-
-#message {
-	height: 90px;
 }
 
 .wrap_caption {
@@ -1010,7 +976,25 @@ a:hover {
 	column-gap           : 15px;
 }
 
-.type-ntf  {
+@media (max-width:1200px) {
+	.type-fllw {
+		grid-template-columns: 1.2fr 3fr;
+	}
+}
+
+@media (max-width:992px) {
+	.type-fllw {
+		grid-template-columns: 1.9fr 3fr;
+	}
+}
+
+@media (max-width:768px) {
+	.type-fllw {
+		grid-template-columns: 1.67fr 3fr;
+	}
+}
+
+.type-ntf {
 	display              : grid;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows   : 1fr 1fr 1fr;
@@ -1254,7 +1238,7 @@ button[type='submit'] {
 }
 
 .container.header img {
-	width: 40%;
+	width: 20%;
 }
 
 .authorization-btns {
